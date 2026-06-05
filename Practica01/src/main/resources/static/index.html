@@ -1,76 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio profesional de Dario Cortez Vazquez, estudiante de Ingeniería en Software.">
     <meta name="keywords" content="Ingeniería en Software, Portafolio, Desarrollador, HTML, Estudiante">
     <meta name="author" content="Dario Cortez Vazquez">
     <link rel="stylesheet" href="Style.css">
-
     <title>Portafolio Dario Cortez V.</title>
 </head>
 <body>
+
 <header>
-<na> <a href="#experiencia"> Experiencia Laboral </a>
-        <a href="#habilidades"> Habilidades </a>
-        <a href="#educacion"> Educacion </a>
-        <a href="#idiomas"> Idiomas </a>
-        <a href="Sobremi.html"> +Sobre Mi </a></na>
+    <nav> 
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#educacion">Educación</a>
+        <a href="#idiomas">Idiomas</a>
+        <a href="Sobremi.html">+ Sobre Mí</a>
+    </nav>
+</header>
 
-<h1>Dario Cortez Vazquez</h1>
-    <h2>Estudiante en Ingenieria en software</h2>
-    <img src="Imagenes/canva-user-avatar-icon-MAEbpvhPdoI.png" height="150" width="150"/>
-    <p>Souy una persona trabajadora, organizada y responsable. Como estudiante de Ingenieria en
-        Software, me a apasiona resolver problemas tecnologicos mediante la programacion,
-        buscando siempre mejorar mis habilidades tecnicas y mantenerme actualizado con las
-        tendencias del sector.</p>
-    
-    </header>
 <main>
-<section id="experiencia">
-<h4>Experiencia Laboral</h4>
-<ul><em><Strong>- Oxxo</Strong> Ayudante en Tienda</em><li>Atencion al cliente, manejo de
-    caja y control de inventarios diarios.</li>
-    <li>Apoyo en la recepcion y acomodo de productos, asegurando su correcta presentacion.</li></ul>
-<ul><em><Strong>- Geosa</Strong> Topografo</em><li>Medicion de terreno para identificar
-    mediciones,desniveles y obstaculos.</li>
-    <li>Gestion de estructura (piso, paredes, techo) segun el plano para exitar accidentes y
-        calidad de la construccion.</li>
-    <li>Generacion de reportes y modificaciones de los planos segun los cambios vistas en un
-        periodo de tiempo asignado con el fin de entregar avances al cliente.</li></ul></section><br>
+    <section class="presentation-section">
+        <img src="Imagenes/imgenpersonal.jpeg" width="220px" alt="Dario Cortez"/>
+        <h1>Dario Cortez Vazquez</h1>
+        <h2>Nogales, Sonora, México • Estudiante en Ingeniería en Software</h2>
+        <p id="Presentacion">
+            Soy una persona trabajadora, organizada y responsable. Como estudiante de Ingeniería en Software, me apasiona resolver problemas tecnológicos mediante la programación, buscando siempre mejorar mis habilidades técnicas y mantenerme actualizado con las tendencias del sector.
+        </p>
+    </section>
 
-    <section id="habilidades"><h4>Habilidades</h4><ul>
-        <li>Gestion de Proyectos</li>
-        <li>Trabajo en equipo</li>
-        <li>Resolucion de problemas</li>
-        <li>Creacion de Pruebas</li>
-    </ul></section><br>
+    <section id="experiencia" class="card">
+        <h4>Experiencia Laboral</h4>
+        <strong>Oxxo</strong> <span>• Ayudante en Tienda</span>
+        <ul>
+            <li>Atención al cliente, manejo de caja y control de inventarios diarios.</li>
+            <li>Apoyo en la recepción y acomodo de productos, asegurando su correcta presentación.</li>
+        </ul>
+        
+        <strong>Geosa</strong> <span>• Topógrafo</span>
+        <ul>
+            <li>Medición de terreno para identificar dimensiones, desniveles y obstáculos.</li>
+            <li>Gestión de estructura (piso, paredes, techo) según el plano para evitar accidentes y asegurar calidad de la construcción.</li>
+            <li>Generación de reportes y modificaciones de los planos según los cambios vistos en un periodo de tiempo asignado con el fin de entregar avances al cliente.</li>
+        </ul>
+    </section>
 
-<section id="educacion"><h4>Educacion</h4>
-<table border="1"><tr>
-    <th>Institucion</th>
-    <th>Especialidad/Carreara</th>
-    <th>Periodo</th>
-</tr><tr><td>CETis No. 128</td>
-<td>Tecnico en Sistemas</td>
-<td>2020-2023</td></tr>
-    <tr><td>ITSON</td>
-        <td>Ingeniero en Software</td>
-        <td>2023-2026(Cursando)</td></tr></table></section><br>
+    <section id="habilidades" class="card">
+        <h4>Habilidades</h4>
+        <ul>
+            <li>Gestión de Proyectos</li>
+            <li>Trabajo en Equipo</li>
+            <li>Resolución de problemas</li>
+            <li>Creación de Pruebas</li>
+        </ul> 
+    </section>
 
-<section id="idiomas"><h4>Idiomas</h4>
-    <ul><li>Español (Nativo)</li>
-    <li>Ingles B2-I</li></ul>
-</section><br>
+    <section id="educacion" class="card">
+        <h4>Educación</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Institución</th>
+                    <th>Especialidad / Carrera</th>
+                    <th>Periodo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CETis No. 128</td>
+                    <td>Técnico en Sistemas</td>
+                    <td>2020 - 2023</td>
+                </tr>
+                <tr>
+                    <td>ITSON</td>
+                    <td>Ingeniero en Software</td>
+                    <td>2023 - 2026 (Cursando)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="idiomas" class="card">
+        <h4>Idiomas</h4>
+        <ul>
+            <li><strong>Español:</strong> Nativo</li>
+            <li><strong>Inglés:</strong> B2-I</li>
+        </ul>
+    </section>
 </main>
 
 <footer>
-    <p>Autor: Dario Cortez Vazquez</p>
-    <ul><li>Telefono: (+52) 631-190-6508</li>
-    <li>Correo: dario.cortez252267@potros.itson.edu.mx</li>
-    <li>Github: <a href="https://github.com/DarioCortezITSON252267" target="_blank" rel="noopener noreferrer">DarioCortezITSON252267</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/dariocortezv-in">Dario Cortez Vazquez</a> </li>
-    <li>Discord: User- dario1039</li></ul>
+    <p>Autor: <strong>Dario Cortez Vazquez</strong></p>
+    <ul class="footer-links">
+        <li>Teléfono: (+52) 631-190-6508</li>
+        <li>Correo: dario.cortez252267@potros.itson.edu.mx</li>
+        <li>GitHub: <a href="https://github.com/DarioCortezITSON252267" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/dariocortezv-in" target="_blank">LinkedIn</a></li>
+        <li>Discord: dario1039</li>
+    </ul>
 </footer>
+
 </body>
 </html>
+
+
+
