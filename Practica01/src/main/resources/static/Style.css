@@ -1,52 +1,95 @@
+:root {
+    --primary-dark: #242222;
+    --text-light: #ffffff;
+    --text-muted: #b3b3b3;
+    --text-dark: #333333;
+    --border-color: #dddddd;
+    --accent-blue: #66b3ff;
+    --card-padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: white; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333333;
+    color: var(--text-dark);
     margin: 0;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--primary-dark);
 }
 
 nav {
-    background-color: #242222;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
     padding: 15px 30px;
-    text-align: right;
 }
 
 nav a {
-    display: inline-block;
     text-decoration: none;
-    color: #ffffff; 
+    color: var(--text-light); 
     font-weight: bold; 
-    margin-left: 25px; 
 }
 
-/*nav a:hover {
+nav a:hover {
     color: #a8a8a8; 
-}*/
+}
 
-.presentation-section {
-    background-color: #242222;
-    color: #e0e0e0;
+.Seccion-Presentacion {
+    background-color: var(--primary-dark);
+    color: var(--text-muted);
     padding: 60px;
-    text-align: left;
+    overflow: hidden;
+}
+.imagen-perfil {
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 28px;
 }
 
-.presentation-section h1 {
-    color: #ffffff; 
+.Seccion-Presentacion h1 {
+    color: var(--text-light); 
 }
 
-.presentation-section h2 {
-    color: #b3b3b3; 
+.Seccion-Presentacion h2 {
+    color: var(--text-muted); 
+}
+
+#Presentacion {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.Doble-seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 20px;
 }
 
 .card {
+    margin-top: 35px;
     margin-left: 120px;
     margin-right: 120px;
     background-color: white;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 20px;
+    padding: var(--card-padding);
     margin-bottom: 20px;
     text-align: left;
+}
+
+.Doble-seccion .card {
+    margin: 0; 
 }
 
 h1 {
@@ -76,7 +119,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border-color);
     padding: 10px;
     text-align: left;
 }
@@ -84,9 +127,53 @@ th, td {
 th {
     background-color: #f9f9f9;
 }
+
+.formulario-contacto {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formulario-contacto form {
+    flex: 1;
+    min-width: 280px;
+}
+
+.form-grupogrupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupo input, .form-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.btn-enviar {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #444444;
+}
+
 footer {
-    background-color: #242222;
-    color: #e0e0e0;
+    background-color: var(--primary-dark);
+    color: var(--text-muted);
     margin-top: 45px;
     padding: 30px;
     text-align: center;
@@ -102,10 +189,10 @@ footer {
 }
 
 .footer-links a {
-    color: #66b3ff; 
+    color: var(--accent-blue); 
     text-decoration: underline;
 }
 
 .footer-links a:hover {
-    color: #ffffff;
+    color: var(--text-light);
 }

@@ -2,11 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>+ Sobre Mi </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+ Sobre Mi</title>
+    
+    <style>
+        body {
+            background-color: #242222; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #dddddd;
+        }
+
+        .btn-regresar {
+            display: inline-block;
+            text-decoration: none;
+            color: #242222;
+            font-weight: bold;
+            border: 2px solid #242222;
+            padding: 8px 16px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-regresar:hover {
+            background-color: #242222;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h4 {
+            border-bottom: 2px solid #242222;
+            padding-bottom: 5px;
+            color: #242222;
+            margin-top: 25px;
+        }
+
+        /* Pseudo-elemento exclusivo de esta vista */
+        h4::before {
+            content: ":D ";
+        }
+
+        ul {
+            padding-left: 30px;
+            line-height: 1.8;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        em {
+            background-color: #e2f0d9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 <main>
-    <a href="Index.html">Regresar a Portafolio</a>
+    <a href="Index.html" class="btn-regresar">← Regresar a Portafolio</a>
+    
     <section id="deportes">
         <h4>Deportes y Actividad Física</h4>
         <p>Me gustan mucho los deportes y mantenerme activo. A lo largo de mi vida he practicado diversas disciplinas, entre ellas:</p>
@@ -15,21 +86,21 @@
             <li>Boxeo</li>
             <li>Sandboard</li>
             <li>Tiro con arco</li>
-            <li>Entrenamiento de fuerza y fitness funcional</li>
+            <li>Entrenamiento de fuerza y Gimnasio</li>
         </ul>
 
-            <h4>Logros Deportivos</h4>
-            <p>He competido en natación a nivel estatal, logrando ganar <em>dos medallas de plata</em> y <em>una de bronce</em>.</p>
+        <h4>Logros Deportivos</h4>
+        <p>He competido en natación a nivel estatal, logrando ganar <em>dos medallas de plata</em> y <em>una de bronce</em>.</p>
 
-            <h4>Metas Deportivas a Futuro</h4>
-            <p>En algún futuro me gustaría aprender a esquiar y hacer paracaidismo.</p>
+        <h4>Metas Deportivas a Futuro</h4>
+        <p>En algún futuro me gustaría aprender a esquiar y hacer paracaidismo.</p>
     </section>
 
     <section id="otros-intereses">
         <h4>Otros Intereses y Aficiones</h4>
         <ul>
             <li><strong>Simulación de Carreras:</strong> Disfruto del sim racing, dedicando tiempo a configurar y optimizar vehículos de alto rendimiento en simuladores como Forza Motorsport.</li>
-            <li><strong>Viajes:</strong> Tengo la gran meta de realizar un viaje por Europa y Asia para explorar y conocer sitios históricos y medievales.</li>
+            <li><strong>Viajes:</strong> Tengo la gran meta de realizar un viaje por Europa y Asia para explorar y conocer sitios históricos y paisajes.</li>
         </ul>
     </section>
 </main>

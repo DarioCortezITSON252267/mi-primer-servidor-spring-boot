@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio profesional de Dario Cortez Vazquez, estudiante de Ingeniería en Software.">
     <meta name="keywords" content="Ingeniería en Software, Portafolio, Desarrollador, HTML, Estudiante">
     <meta name="author" content="Dario Cortez Vazquez">
+    <link rel="icon" href="Imagenes/Screenshot 2026-06-07 181549.ico">
     <link rel="stylesheet" href="Style.css">
     <title>Portafolio Dario Cortez V.</title>
 </head>
@@ -14,20 +15,21 @@
 <header>
     <nav> 
         <a href="#experiencia">Experiencia</a>
-        <a href="#habilidades">Habilidades</a>
+        <a href="#habilidades-idiomas">Habilidades e Idiomas</a>
         <a href="#educacion">Educación</a>
-        <a href="#idiomas">Idiomas</a>
+        <a href="#contacto">Contacto</a>
         <a href="Sobremi.html">+ Sobre Mí</a>
     </nav>
 </header>
 
 <main>
-    <section class="presentation-section">
-        <img src="Imagenes/imgenpersonal.jpeg" width="220px" alt="Dario Cortez"/>
+    <section class="Seccion-Presentacion">
+        <img class="imagen-perfil" src="Imagenes/imgenpersonal.jpeg" width="220px" alt="Dario Cortez"/>
         <h1>Dario Cortez Vazquez</h1>
-        <h2>Nogales, Sonora, México • Estudiante en Ingeniería en Software</h2>
+        <h2>Nogales, Sonora, México • Estudiante en Ingeniería en Software (ITSON)</h2>
         <p id="Presentacion">
-            Soy una persona trabajadora, organizada y responsable. Como estudiante de Ingeniería en Software, me apasiona resolver problemas tecnológicos mediante la programación, buscando siempre mejorar mis habilidades técnicas y mantenerme actualizado con las tendencias del sector.
+            Soy una persona trabajadora, organizada y responsable. Como estudiante de Ingeniería en Software, me apasiona resolver problemas tecnológicos mediante la
+            programación, buscando siempre mejorar mis habilidades técnicas y mantenerme actualizado con las tendencias del sector.
         </p>
     </section>
 
@@ -43,19 +45,30 @@
         <ul>
             <li>Medición de terreno para identificar dimensiones, desniveles y obstáculos.</li>
             <li>Gestión de estructura (piso, paredes, techo) según el plano para evitar accidentes y asegurar calidad de la construcción.</li>
-            <li>Generación de reportes y modificaciones de los planos según los cambios vistos en un periodo de tiempo asignado con el fin de entregar avances al cliente.</li>
+            <li>Generación de reportes y modificaciones de los planos según los cambios vistos en un periodo de tiempo asignado con el fin de entregar avances al
+            cliente.</li>
         </ul>
     </section>
 
-    <section id="habilidades" class="card">
-        <h4>Habilidades</h4>
-        <ul>
-            <li>Gestión de Proyectos</li>
-            <li>Trabajo en Equipo</li>
-            <li>Resolución de problemas</li>
-            <li>Creación de Pruebas</li>
-        </ul> 
-    </section>
+    <div id="habilidades-idiomas" class="Doble-seccion">
+        <section id="habilidades" class="card">
+            <h4>Habilidades</h4>
+            <ul>
+                <li>Gestión de Proyectos</li>
+                <li>Trabajo en Equipo</li>
+                <li>Resolución de problemas</li>
+                <li>Creación de Pruebas</li>
+            </ul> 
+        </section>
+
+        <section id="idiomas" class="card">
+            <h4>Idiomas</h4>
+            <ul>
+                <li><strong>Español:</strong> Nativo</li>
+                <li><strong>Inglés:</strong> B2-I</li>
+            </ul>
+        </section>
+    </div>
 
     <section id="educacion" class="card">
         <h4>Educación</h4>
@@ -82,12 +95,29 @@
         </table>
     </section>
 
-    <section id="idiomas" class="card">
-        <h4>Idiomas</h4>
-        <ul>
-            <li><strong>Español:</strong> Nativo</li>
-            <li><strong>Inglés:</strong> B2-I</li>
-        </ul>
+    <section id="contacto" class="card">
+        <h4>Contacto</h4>
+        <div class="formulario-contacto">
+            
+            <form action="#" method="POST" onsubmit="alert('¡Gracias! Tu mensaje ha sido simulado con éxito.'); return false;">
+                <div class="form-grupo">
+                    <label for="txt-nombre">Nombre Completo:</label>
+                    <input type="text" id="txt-nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="txt-correo">Correo Electrónico:</label>
+                    <input type="email" id="txt-correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="txt-mensaje">Mensaje:</label>
+                    <textarea id="txt-mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
     </section>
 </main>
 
